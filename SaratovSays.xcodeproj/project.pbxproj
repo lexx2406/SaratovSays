@@ -56,15 +56,31 @@
 		A8260D3B2B083DA900BC8FA5 /* SaratovSays */ = {
 			isa = PBXGroup;
 			children = (
-				A8260D3C2B083DA900BC8FA5 /* AppDelegate.swift */,
-				A8260D3E2B083DA900BC8FA5 /* SceneDelegate.swift */,
-				A8260D402B083DA900BC8FA5 /* ViewController.swift */,
+				A8260D512B08440B00BC8FA5 /* Helpers */,
+				A8260D502B0843D700BC8FA5 /* Controllers */,
 				A8260D422B083DA900BC8FA5 /* Main.storyboard */,
-				A8260D452B083DAB00BC8FA5 /* Assets.xcassets */,
 				A8260D472B083DAB00BC8FA5 /* LaunchScreen.storyboard */,
 				A8260D4A2B083DAB00BC8FA5 /* Info.plist */,
 			);
 			path = SaratovSays;
+			sourceTree = "<group>";
+		};
+		A8260D502B0843D700BC8FA5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8260D402B083DA900BC8FA5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8260D512B08440B00BC8FA5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8260D3E2B083DA900BC8FA5 /* SceneDelegate.swift */,
+				A8260D3C2B083DA900BC8FA5 /* AppDelegate.swift */,
+				A8260D452B083DAB00BC8FA5 /* Assets.xcassets */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +306,14 @@
 				DEVELOPMENT_TEAM = 3JV5F4DZG5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SaratovSays/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Говорит Саратов";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +321,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pgovoritSaratov.lexx2406.New.SaratovSays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +340,14 @@
 				DEVELOPMENT_TEAM = 3JV5F4DZG5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SaratovSays/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Говорит Саратов";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +355,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pgovoritSaratov.lexx2406.New.SaratovSays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
