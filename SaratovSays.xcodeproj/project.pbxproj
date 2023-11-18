@@ -16,6 +16,7 @@
 		A85BDFD22B0943DA00F398F2 /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFD12B0943DA00F398F2 /* TreeViewController.swift */; };
 		A85BDFD42B094AEF00F398F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFD32B094AEF00F398F2 /* HomeViewController.swift */; };
 		A85BDFD62B09509700F398F2 /* StreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFD52B09509600F398F2 /* StreetViewController.swift */; };
+		A85BDFDE2B096F9E00F398F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFDD2B096F9E00F398F2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A85BDFD12B0943DA00F398F2 /* TreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeViewController.swift; sourceTree = "<group>"; };
 		A85BDFD32B094AEF00F398F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A85BDFD52B09509600F398F2 /* StreetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetViewController.swift; sourceTree = "<group>"; };
+		A85BDFDD2B096F9E00F398F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				A8260D3E2B083DA900BC8FA5 /* SceneDelegate.swift */,
 				A8260D3C2B083DA900BC8FA5 /* AppDelegate.swift */,
 				A8260D452B083DAB00BC8FA5 /* Assets.xcassets */,
+				A85BDFDD2B096F9E00F398F2 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				A8260D412B083DA900BC8FA5 /* ViewController.swift in Sources */,
 				A8260D3D2B083DA900BC8FA5 /* AppDelegate.swift in Sources */,
 				A85BDFD62B09509700F398F2 /* StreetViewController.swift in Sources */,
+				A85BDFDE2B096F9E00F398F2 /* Constants.swift in Sources */,
 				A85BDFD22B0943DA00F398F2 /* TreeViewController.swift in Sources */,
 				A8260D3F2B083DA900BC8FA5 /* SceneDelegate.swift in Sources */,
 			);

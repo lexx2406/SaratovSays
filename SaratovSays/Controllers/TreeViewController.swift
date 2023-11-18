@@ -14,6 +14,9 @@ final class TreeViewController: UIViewController {
     @IBOutlet weak var exit: UIButton!
     @IBAction func exit(_ sender: Any) {
     }
-    @IBOutlet weak var progressView: UIProgressView!
-    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        webView.load(URLRequest(url: url))
+      }
 }

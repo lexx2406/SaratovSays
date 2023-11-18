@@ -393,37 +393,27 @@
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8S2-Re-gRM">
-                                <rect key="frame" x="0.0" y="125" width="414" height="737"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mPQ-DQ-gQx">
-                                <rect key="frame" x="0.0" y="118" width="414" height="7"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="7" id="TnY-Hy-JkF"/>
-                                </constraints>
-                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k4v-S2-GeX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8S2-Re-gRM" firstAttribute="top" secondItem="zbR-ZX-fwo" secondAttribute="bottom" id="0Ni-OA-GDQ"/>
                             <constraint firstItem="k4v-S2-GeX" firstAttribute="trailing" secondItem="8S2-Re-gRM" secondAttribute="trailing" id="478-4g-NbV"/>
-                            <constraint firstItem="mPQ-DQ-gQx" firstAttribute="top" secondItem="zbR-ZX-fwo" secondAttribute="bottom" id="FyZ-dd-il8"/>
                             <constraint firstItem="zbR-ZX-fwo" firstAttribute="top" secondItem="k4v-S2-GeX" secondAttribute="top" constant="10" id="Gzq-uv-oUz"/>
-                            <constraint firstItem="mPQ-DQ-gQx" firstAttribute="leading" secondItem="k4v-S2-GeX" secondAttribute="leading" id="HEa-Xk-7yL"/>
                             <constraint firstItem="zbR-ZX-fwo" firstAttribute="leading" secondItem="k4v-S2-GeX" secondAttribute="leading" constant="10" id="HhD-7k-mnd"/>
-                            <constraint firstItem="8S2-Re-gRM" firstAttribute="top" secondItem="mPQ-DQ-gQx" secondAttribute="bottom" id="Qm9-ru-jaq"/>
                             <constraint firstItem="8S2-Re-gRM" firstAttribute="leading" secondItem="k4v-S2-GeX" secondAttribute="leading" id="dob-HN-izZ"/>
                             <constraint firstItem="k4v-S2-GeX" firstAttribute="bottom" secondItem="8S2-Re-gRM" secondAttribute="bottom" id="j79-Sm-IBA"/>
-                            <constraint firstItem="mPQ-DQ-gQx" firstAttribute="trailing" secondItem="k4v-S2-GeX" secondAttribute="trailing" id="y1v-AC-7NR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="exit" destination="zbR-ZX-fwo" id="5vt-zy-jFh"/>
-                        <outlet property="progressView" destination="mPQ-DQ-gQx" id="eqw-3h-A98"/>
                         <outlet property="webView" destination="8S2-Re-gRM" id="xDD-9d-abv"/>
                     </connections>
                 </viewController>
@@ -433,7 +423,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0rM-oy-Mkf"/>
+        <segue reference="2U0-DJ-Ont"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="2737" height="2737"/>
