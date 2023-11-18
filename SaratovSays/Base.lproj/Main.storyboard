@@ -279,6 +279,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="hatch:" destination="WeR-6i-J3z" eventType="touchUpInside" id="esw-Yd-Naz"/>
+                                    <segue destination="Wo9-G2-ahT" kind="presentation" modalPresentationStyle="fullScreen" id="MaQ-cE-7Z3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-hX-SAA">
@@ -299,6 +300,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="asphalt:" destination="WeR-6i-J3z" eventType="touchUpInside" id="Hbm-We-pVe"/>
+                                    <segue destination="Stu-hi-951" kind="presentation" modalPresentationStyle="fullScreen" id="Pat-Vf-gMw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvn-ge-TIc">
@@ -319,6 +321,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="garbage:" destination="WeR-6i-J3z" eventType="touchUpInside" id="i6L-6j-d9V"/>
+                                    <segue destination="p41-WJ-wYD" kind="presentation" modalPresentationStyle="fullScreen" id="7uK-BV-Dv4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDy-aB-mfF">
@@ -368,6 +371,162 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BC3-Jj-aG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="-408.48214285714283"/>
+        </scene>
+        <!--Garbage View Controller-->
+        <scene sceneID="Ldk-5p-hIe">
+            <objects>
+                <viewController id="p41-WJ-wYD" customClass="GarbageViewController" customModule="SaratovSays" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWp-DD-qDI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFG-TP-7d0">
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="w8m-UG-Exz"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exit:" destination="p41-WJ-wYD" eventType="touchUpInside" id="9Ii-Ae-4Cz"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="RpY-gZ-CMu"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Kc-XvB">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZfZ-tb-iL7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sWe-Kc-XvB" firstAttribute="leading" secondItem="ZfZ-tb-iL7" secondAttribute="leading" id="EER-YP-We4"/>
+                            <constraint firstItem="zFG-TP-7d0" firstAttribute="top" secondItem="ZfZ-tb-iL7" secondAttribute="top" constant="10" id="I4D-pv-qdm"/>
+                            <constraint firstItem="ZfZ-tb-iL7" firstAttribute="bottom" secondItem="sWe-Kc-XvB" secondAttribute="bottom" id="PiK-i3-6nE"/>
+                            <constraint firstItem="sWe-Kc-XvB" firstAttribute="top" secondItem="zFG-TP-7d0" secondAttribute="bottom" id="e66-hx-h4M"/>
+                            <constraint firstItem="ZfZ-tb-iL7" firstAttribute="trailing" secondItem="sWe-Kc-XvB" secondAttribute="trailing" id="hgu-sN-lf7"/>
+                            <constraint firstItem="zFG-TP-7d0" firstAttribute="leading" secondItem="ZfZ-tb-iL7" secondAttribute="leading" constant="10" id="xXO-8W-7s6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exit" destination="zFG-TP-7d0" id="tGe-VP-gTj"/>
+                        <outlet property="webView" destination="sWe-Kc-XvB" id="oXy-eM-9cW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vT7-oV-BxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442" y="-1139"/>
+        </scene>
+        <!--Hath View Controller-->
+        <scene sceneID="cRR-EX-g0s">
+            <objects>
+                <viewController id="Wo9-G2-ahT" customClass="HathViewController" customModule="SaratovSays" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ikg-dI-ZUN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6E-8w-NG6">
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hXF-2q-av9"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exit:" destination="Wo9-G2-ahT" eventType="touchUpInside" id="9de-3J-5no"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="QR3-IV-fQf"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-ms-1xe">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JLG-Ge-yre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l6E-8w-NG6" firstAttribute="leading" secondItem="JLG-Ge-yre" secondAttribute="leading" constant="10" id="CUW-Pi-G28"/>
+                            <constraint firstItem="l6E-8w-NG6" firstAttribute="top" secondItem="JLG-Ge-yre" secondAttribute="top" constant="10" id="ChK-Qb-g2n"/>
+                            <constraint firstItem="1O0-ms-1xe" firstAttribute="top" secondItem="l6E-8w-NG6" secondAttribute="bottom" id="bDl-Iq-3gZ"/>
+                            <constraint firstItem="JLG-Ge-yre" firstAttribute="bottom" secondItem="1O0-ms-1xe" secondAttribute="bottom" id="e03-gZ-qIX"/>
+                            <constraint firstItem="JLG-Ge-yre" firstAttribute="trailing" secondItem="1O0-ms-1xe" secondAttribute="trailing" id="gyR-Q4-NB2"/>
+                            <constraint firstItem="1O0-ms-1xe" firstAttribute="leading" secondItem="JLG-Ge-yre" secondAttribute="leading" id="wVr-1z-Kt1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exit" destination="l6E-8w-NG6" id="m53-kM-Mxc"/>
+                        <outlet property="webView" destination="1O0-ms-1xe" id="aNe-0r-TZ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujR-uL-Sxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="-1139"/>
+        </scene>
+        <!--Asphalt View Controller-->
+        <scene sceneID="rFf-wV-sFq">
+            <objects>
+                <viewController id="Stu-hi-951" customClass="AsphaltViewController" customModule="SaratovSays" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0GZ-b3-BNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-dY-02L">
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Eiz-ln-HND"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exit:" destination="Stu-hi-951" eventType="touchUpInside" id="k9N-DM-6ab"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="ka6-BY-gLZ"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdz-ao-Dtc">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="77X-MH-eOj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wdz-ao-Dtc" firstAttribute="top" secondItem="U7f-dY-02L" secondAttribute="bottom" id="69d-Cc-eHc"/>
+                            <constraint firstItem="77X-MH-eOj" firstAttribute="bottom" secondItem="Wdz-ao-Dtc" secondAttribute="bottom" id="KTB-6d-z9J"/>
+                            <constraint firstItem="77X-MH-eOj" firstAttribute="trailing" secondItem="Wdz-ao-Dtc" secondAttribute="trailing" id="jDV-Yp-S73"/>
+                            <constraint firstItem="U7f-dY-02L" firstAttribute="top" secondItem="77X-MH-eOj" secondAttribute="top" constant="10" id="tKV-Et-uhq"/>
+                            <constraint firstItem="Wdz-ao-Dtc" firstAttribute="leading" secondItem="77X-MH-eOj" secondAttribute="leading" id="u82-rO-hdg"/>
+                            <constraint firstItem="U7f-dY-02L" firstAttribute="leading" secondItem="77X-MH-eOj" secondAttribute="leading" constant="10" id="wC9-op-ju8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exit" destination="U7f-dY-02L" id="gN9-nV-Xgt"/>
+                        <outlet property="webView" destination="Wdz-ao-Dtc" id="5Or-Es-xCe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4f-eV-cEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-1139"/>
         </scene>
         <!--Tree View Controller-->
         <scene sceneID="S6G-wH-ERy">
@@ -419,11 +578,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIS-Wa-ztH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.043478260869566" y="-910.04464285714278"/>
+            <point key="canvasLocation" x="35" y="-1139"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2U0-DJ-Ont"/>
+        <segue reference="RpY-gZ-CMu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="2737" height="2737"/>
