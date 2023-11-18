@@ -96,16 +96,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-da-83f">
-                                <rect key="frame" x="10" y="58" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-da-83f">
+                                <rect key="frame" x="10" y="58" width="98.5" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="bp0-dd-fLU"/>
-                                    <constraint firstAttribute="height" constant="50" id="ciT-nj-0QJ"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="g1J-UX-uQM"/>
-                                    <constraint firstAttribute="width" constant="50" id="z69-jY-XIi"/>
+                                    <constraint firstAttribute="height" constant="60" id="gQD-7i-UoB"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="2q4-X6-Ci3"/>
                                 </connections>
@@ -220,18 +220,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDy-aB-mfF">
-                                <rect key="frame" x="10" y="58" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="UWs-EE-HIM"/>
-                                    <constraint firstAttribute="height" constant="50" id="Vqp-fA-7if"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="0rM-oy-Mkf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AST-eL-Xct">
                                 <rect key="frame" x="25" y="373" width="364" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -241,6 +229,23 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Рубят дерево">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-kv-FAM">
+                                <rect key="frame" x="25" y="458" width="364" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pWO-ai-a5X"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Открытый люк">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -283,22 +288,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-kv-FAM">
-                                <rect key="frame" x="25" y="458" width="364" height="60"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDy-aB-mfF">
+                                <rect key="frame" x="10" y="58" width="98.5" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="pWO-ai-a5X"/>
+                                    <constraint firstAttribute="height" constant="60" id="8Bv-1L-vgN"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Открытый люк">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                 </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0rM-oy-Mkf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7hS-2w-Vlo"/>
@@ -306,6 +308,7 @@
                         <constraints>
                             <constraint firstItem="mxe-hX-SAA" firstAttribute="top" secondItem="6dW-kv-FAM" secondAttribute="bottom" constant="25" id="79s-cn-wHd"/>
                             <constraint firstItem="7hS-2w-Vlo" firstAttribute="trailing" secondItem="mxe-hX-SAA" secondAttribute="trailing" constant="25" id="7jq-aA-BUY"/>
+                            <constraint firstItem="zDy-aB-mfF" firstAttribute="top" secondItem="7hS-2w-Vlo" secondAttribute="top" constant="10" id="8GR-Bf-igl"/>
                             <constraint firstItem="7hS-2w-Vlo" firstAttribute="trailing" secondItem="Rvn-ge-TIc" secondAttribute="trailing" constant="25" id="8fv-gc-GjN"/>
                             <constraint firstItem="7hS-2w-Vlo" firstAttribute="trailing" secondItem="6dW-kv-FAM" secondAttribute="trailing" constant="25" id="Abo-Fb-Zrx"/>
                             <constraint firstItem="6dW-kv-FAM" firstAttribute="leading" secondItem="7hS-2w-Vlo" secondAttribute="leading" constant="25" id="Cdx-Wc-O39"/>
@@ -313,10 +316,9 @@
                             <constraint firstItem="AST-eL-Xct" firstAttribute="leading" secondItem="7hS-2w-Vlo" secondAttribute="leading" constant="25" id="ENc-MP-S42"/>
                             <constraint firstItem="Rvn-ge-TIc" firstAttribute="leading" secondItem="7hS-2w-Vlo" secondAttribute="leading" constant="25" id="ItE-QD-JTp"/>
                             <constraint firstItem="7hS-2w-Vlo" firstAttribute="trailing" secondItem="AST-eL-Xct" secondAttribute="trailing" constant="25" id="Qt0-dC-pZu"/>
+                            <constraint firstItem="zDy-aB-mfF" firstAttribute="leading" secondItem="7hS-2w-Vlo" secondAttribute="leading" constant="10" id="Uql-A9-C1k"/>
                             <constraint firstItem="mxe-hX-SAA" firstAttribute="leading" secondItem="7hS-2w-Vlo" secondAttribute="leading" constant="25" id="ZfR-YR-wDZ"/>
                             <constraint firstItem="6dW-kv-FAM" firstAttribute="top" secondItem="AST-eL-Xct" secondAttribute="bottom" constant="25" id="aIq-oL-3x4"/>
-                            <constraint firstItem="zDy-aB-mfF" firstAttribute="top" secondItem="7hS-2w-Vlo" secondAttribute="top" constant="10" id="l4m-22-z85"/>
-                            <constraint firstItem="zDy-aB-mfF" firstAttribute="leading" secondItem="7hS-2w-Vlo" secondAttribute="leading" constant="10" id="mOa-S9-DzK"/>
                             <constraint firstItem="Rvn-ge-TIc" firstAttribute="top" secondItem="mxe-hX-SAA" secondAttribute="bottom" constant="25" id="rBL-Xk-F3U"/>
                         </constraints>
                     </view>
