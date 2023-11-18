@@ -13,6 +13,8 @@
 		A8260D442B083DA900BC8FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8260D422B083DA900BC8FA5 /* Main.storyboard */; };
 		A8260D462B083DAB00BC8FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8260D452B083DAB00BC8FA5 /* Assets.xcassets */; };
 		A8260D492B083DAB00BC8FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8260D472B083DAB00BC8FA5 /* LaunchScreen.storyboard */; };
+		A83E2B8E2B08D1D600462CBD /* Home View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E2B8D2B08D1D600462CBD /* Home View Controller.swift */; };
+		A83E2B902B08D2DE00462CBD /* Street View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E2B8F2B08D2DE00462CBD /* Street View Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A8260D452B083DAB00BC8FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8260D482B083DAB00BC8FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8260D4A2B083DAB00BC8FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A83E2B8D2B08D1D600462CBD /* Home View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View Controller.swift"; sourceTree = "<group>"; };
+		A83E2B8F2B08D2DE00462CBD /* Street View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Street View Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				A8260D402B083DA900BC8FA5 /* ViewController.swift */,
+				A83E2B8D2B08D1D600462CBD /* Home View Controller.swift */,
+				A83E2B8F2B08D2DE00462CBD /* Street View Controller.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8260D412B083DA900BC8FA5 /* ViewController.swift in Sources */,
+				A83E2B8E2B08D1D600462CBD /* Home View Controller.swift in Sources */,
 				A8260D3D2B083DA900BC8FA5 /* AppDelegate.swift in Sources */,
+				A83E2B902B08D2DE00462CBD /* Street View Controller.swift in Sources */,
 				A8260D3F2B083DA900BC8FA5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
