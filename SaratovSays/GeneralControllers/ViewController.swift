@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var Street: UIButton!
-    @IBOutlet weak var Home: UIButton!
-    @IBAction func Street(_ sender: Any) {
+    @IBOutlet private weak var Street: UIButton!
+    @IBOutlet private weak var Home: UIButton!
+    @IBAction private func Street(_ sender: Any) {
     }
-    @IBAction func Home(_ sender: Any) {
+    @IBAction private func Home(_ sender: Any) {
     }
     
     override func viewDidLoad() {

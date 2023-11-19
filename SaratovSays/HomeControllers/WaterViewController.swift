@@ -10,9 +10,9 @@ import WebKit
 
 final class WaterViewController: UIViewController {
     
-    @IBOutlet weak private var webView: WKWebView!
-    @IBOutlet weak var exit: UIButton!
-    @IBAction func exit(_ sender: Any) {
+    @IBOutlet private weak var webView: WKWebView!
+    @IBOutlet private weak var exit: UIButton!
+    @IBAction private func exit(_ sender: Any) {
     }
 
     override func viewDidLoad() {

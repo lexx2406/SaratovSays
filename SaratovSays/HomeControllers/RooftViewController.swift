@@ -10,8 +10,8 @@ import WebKit
 
 final class RoofViewController: UIViewController {
     
-    @IBOutlet weak private var webView: WKWebView!
-    @IBOutlet weak var exit: UIButton!
+    @IBOutlet private weak var webView: WKWebView!
+    @IBOutlet private weak var exit: UIButton!
     @IBAction func exit(_ sender: Any) {
     }
 

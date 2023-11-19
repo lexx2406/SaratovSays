@@ -9,20 +9,20 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var exit: UIButton!
-    @IBAction func exit(_ sender: Any) {
+    @IBOutlet private weak var exit: UIButton!
+    @IBAction private func exit(_ sender: Any) {
     }
-    @IBOutlet weak var wather: UIButton!
-    @IBAction func wather(_ sender: Any) {
+    @IBOutlet private weak var wather: UIButton!
+    @IBAction private func wather(_ sender: Any) {
     }
-    @IBOutlet weak var heating: UIButton!
-    @IBAction func heating(_ sender: Any) {
+    @IBOutlet private weak var heating: UIButton!
+    @IBAction private func heating(_ sender: Any) {
     }
-    @IBOutlet weak var pipe: UIButton!
-    @IBAction func pipe(_ sender: Any) {
+    @IBOutlet private weak var pipe: UIButton!
+    @IBAction private func pipe(_ sender: Any) {
     }
-    @IBOutlet weak var roof: UIButton!
-    @IBAction func roof(_ sender: Any) {
+    @IBOutlet private weak var roof: UIButton!
+    @IBAction private func roof(_ sender: Any) {
     }
 }
     

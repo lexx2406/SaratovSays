@@ -593,13 +593,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztu-g0-Jtb">
-                                <rect key="frame" x="10" y="58" width="123.5" height="60"/>
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8CB-jV-lvn"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -645,13 +645,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-iD-NrU">
-                                <rect key="frame" x="10" y="58" width="123.5" height="60"/>
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="jeK-Fv-bb5"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -697,13 +697,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-uy-Gib">
-                                <rect key="frame" x="10" y="58" width="99.5" height="60"/>
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="NRL-Ji-5a6"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -724,12 +724,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eUh-cR-bsY" firstAttribute="leading" secondItem="tGK-js-R1y" secondAttribute="leading" id="9hZ-Lu-9SG"/>
-                            <constraint firstItem="eUh-cR-bsY" firstAttribute="leading" secondItem="Z4X-uy-Gib" secondAttribute="trailing" constant="-109.5" id="aEi-FT-Yr0"/>
+                            <constraint firstItem="Z4X-uy-Gib" firstAttribute="leading" secondItem="tGK-js-R1y" secondAttribute="leading" constant="10" id="Jaz-aB-mXt"/>
                             <constraint firstItem="eUh-cR-bsY" firstAttribute="top" secondItem="Z4X-uy-Gib" secondAttribute="bottom" id="cyL-qU-oRm"/>
-                            <constraint firstItem="Z4X-uy-Gib" firstAttribute="top" secondItem="tGK-js-R1y" secondAttribute="top" constant="10" id="dFq-Ia-tRH"/>
+                            <constraint firstItem="Z4X-uy-Gib" firstAttribute="top" secondItem="tGK-js-R1y" secondAttribute="top" constant="10" id="mni-Ps-oIs"/>
                             <constraint firstItem="tGK-js-R1y" firstAttribute="trailing" secondItem="eUh-cR-bsY" secondAttribute="trailing" id="qJT-fC-pn8"/>
                             <constraint firstItem="tGK-js-R1y" firstAttribute="bottom" secondItem="eUh-cR-bsY" secondAttribute="bottom" id="wpF-7Y-YWZ"/>
-                            <constraint firstItem="Z4X-uy-Gib" firstAttribute="leading" secondItem="tGK-js-R1y" secondAttribute="leading" constant="10" id="zg9-fr-yww"/>
                         </constraints>
                     </view>
                     <connections>
@@ -750,13 +749,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXb-Wp-MSa">
-                                <rect key="frame" x="10" y="58" width="123.5" height="60"/>
+                                <rect key="frame" x="10" y="58" width="122" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="aMY-zc-LUJ"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Назад">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -795,7 +794,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lvK-BH-F77"/>
+        <segue reference="tti-pM-Okz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="2737" height="2737"/>
