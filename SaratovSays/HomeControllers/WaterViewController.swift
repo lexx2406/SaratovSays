@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-final class WatertViewController: UIViewController {
+final class WaterViewController: UIViewController {
     
     @IBOutlet weak private var webView: WKWebView!
     @IBOutlet weak var exit: UIButton!

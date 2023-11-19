@@ -603,6 +603,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="exit:" destination="YFL-vp-Qfd" eventType="touchUpInside" id="rDP-u8-PT1"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Eq0-XM-J6K"/>
                                 </connections>
                             </button>
@@ -626,6 +627,10 @@
                             <constraint firstItem="tv2-cx-6qt" firstAttribute="leading" secondItem="Lah-iv-k3A" secondAttribute="leading" id="tev-kp-g53"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exit" destination="ztu-g0-Jtb" id="nYk-2x-GI9"/>
+                        <outlet property="webView" destination="tv2-cx-6qt" id="yQz-RZ-MVF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzF-MN-uL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -650,6 +655,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="exit:" destination="fSc-tI-8Zv" eventType="touchUpInside" id="Ibf-8Y-ofY"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Dog-ms-pdK"/>
                                 </connections>
                             </button>
@@ -673,6 +679,10 @@
                             <constraint firstItem="njQ-iD-NrU" firstAttribute="top" secondItem="g3M-XB-xYl" secondAttribute="top" constant="10" id="vFP-4d-95d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exit" destination="njQ-iD-NrU" id="fpC-3Z-cGh"/>
+                        <outlet property="webView" destination="ugD-Ho-a1L" id="Shv-rJ-DyU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plo-an-jsh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -697,6 +707,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="exit:" destination="iKR-EF-9EZ" eventType="touchUpInside" id="7Fk-TN-lQO"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="tti-pM-Okz"/>
                                 </connections>
                             </button>
@@ -721,6 +732,10 @@
                             <constraint firstItem="Z4X-uy-Gib" firstAttribute="leading" secondItem="tGK-js-R1y" secondAttribute="leading" constant="10" id="zg9-fr-yww"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exit" destination="Z4X-uy-Gib" id="rs7-56-Ba6"/>
+                        <outlet property="webView" destination="eUh-cR-bsY" id="Slg-Ev-Xa9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEA-Z8-Hca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -745,6 +760,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="exit:" destination="NcU-A4-YTi" eventType="touchUpInside" id="tj3-v1-6RN"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="lvK-BH-F77"/>
                                 </connections>
                             </button>
@@ -768,6 +784,10 @@
                             <constraint firstItem="87S-vJ-Ws8" firstAttribute="trailing" secondItem="vd0-2q-vy8" secondAttribute="trailing" id="pZf-BN-gEi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exit" destination="MXb-Wp-MSa" id="zUv-uR-Mfh"/>
+                        <outlet property="webView" destination="vd0-2q-vy8" id="pXn-ds-Kfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvt-CJ-Or2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

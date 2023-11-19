@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-final class RooftViewController: UIViewController {
+final class RoofViewController: UIViewController {
     
     @IBOutlet weak private var webView: WKWebView!
     @IBOutlet weak var exit: UIButton!
