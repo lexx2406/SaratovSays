@@ -20,7 +20,10 @@
 		A85BDFE42B097C1200F398F2 /* HathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFE32B097C1200F398F2 /* HathViewController.swift */; };
 		A85BDFE62B097D3E00F398F2 /* GarbageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFE52B097D3E00F398F2 /* GarbageViewController.swift */; };
 		A85BDFE82B097DE400F398F2 /* AsphaltViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFE72B097DE400F398F2 /* AsphaltViewController.swift */; };
-		A85BDFEA2B097E1200F398F2 /* StandartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFE92B097E1200F398F2 /* StandartViewController.swift */; };
+		A85BDFEA2B097E1200F398F2 /* RooftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BDFE92B097E1200F398F2 /* RooftViewController.swift */; };
+		A8BA644A2B0A268B00579574 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA64492B0A268B00579574 /* WaterViewController.swift */; };
+		A8BA644C2B0A290200579574 /* HeatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA644B2B0A290200579574 /* HeatingViewController.swift */; };
+		A8BA644E2B0A2A6000579574 /* PipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA644D2B0A2A6000579574 /* PipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +42,10 @@
 		A85BDFE32B097C1200F398F2 /* HathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HathViewController.swift; sourceTree = "<group>"; };
 		A85BDFE52B097D3E00F398F2 /* GarbageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageViewController.swift; sourceTree = "<group>"; };
 		A85BDFE72B097DE400F398F2 /* AsphaltViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsphaltViewController.swift; sourceTree = "<group>"; };
-		A85BDFE92B097E1200F398F2 /* StandartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartViewController.swift; sourceTree = "<group>"; };
+		A85BDFE92B097E1200F398F2 /* RooftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RooftViewController.swift; sourceTree = "<group>"; };
+		A8BA64492B0A268B00579574 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		A8BA644B2B0A290200579574 /* HeatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatingViewController.swift; sourceTree = "<group>"; };
+		A8BA644D2B0A2A6000579574 /* PipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,10 @@
 		A8260D3B2B083DA900BC8FA5 /* SaratovSays */ = {
 			isa = PBXGroup;
 			children = (
+				A8260D502B0843D700BC8FA5 /* GeneralControllers */,
+				A8BA64482B09824500579574 /* HomeControllers */,
+				A85BDFEB2B09818300F398F2 /* StreetControllers */,
 				A8260D512B08440B00BC8FA5 /* Helpers */,
-				A8260D502B0843D700BC8FA5 /* Controllers */,
 				A8260D422B083DA900BC8FA5 /* Main.storyboard */,
 				A8260D472B083DAB00BC8FA5 /* LaunchScreen.storyboard */,
 				A8260D4A2B083DAB00BC8FA5 /* Info.plist */,
@@ -81,19 +89,14 @@
 			path = SaratovSays;
 			sourceTree = "<group>";
 		};
-		A8260D502B0843D700BC8FA5 /* Controllers */ = {
+		A8260D502B0843D700BC8FA5 /* GeneralControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A85BDFD12B0943DA00F398F2 /* TreeViewController.swift */,
 				A8260D402B083DA900BC8FA5 /* ViewController.swift */,
 				A85BDFD32B094AEF00F398F2 /* HomeViewController.swift */,
 				A85BDFD52B09509600F398F2 /* StreetViewController.swift */,
-				A85BDFE32B097C1200F398F2 /* HathViewController.swift */,
-				A85BDFE52B097D3E00F398F2 /* GarbageViewController.swift */,
-				A85BDFE72B097DE400F398F2 /* AsphaltViewController.swift */,
-				A85BDFE92B097E1200F398F2 /* StandartViewController.swift */,
 			);
-			path = Controllers;
+			path = GeneralControllers;
 			sourceTree = "<group>";
 		};
 		A8260D512B08440B00BC8FA5 /* Helpers */ = {
@@ -105,6 +108,28 @@
 				A85BDFDD2B096F9E00F398F2 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A85BDFEB2B09818300F398F2 /* StreetControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A85BDFD12B0943DA00F398F2 /* TreeViewController.swift */,
+				A85BDFE32B097C1200F398F2 /* HathViewController.swift */,
+				A85BDFE72B097DE400F398F2 /* AsphaltViewController.swift */,
+				A85BDFE52B097D3E00F398F2 /* GarbageViewController.swift */,
+			);
+			path = StreetControllers;
+			sourceTree = "<group>";
+		};
+		A8BA64482B09824500579574 /* HomeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A85BDFE92B097E1200F398F2 /* RooftViewController.swift */,
+				A8BA64492B0A268B00579574 /* WaterViewController.swift */,
+				A8BA644B2B0A290200579574 /* HeatingViewController.swift */,
+				A8BA644D2B0A2A6000579574 /* PipeViewController.swift */,
+			);
+			path = HomeControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +206,14 @@
 				A85BDFD42B094AEF00F398F2 /* HomeViewController.swift in Sources */,
 				A8260D412B083DA900BC8FA5 /* ViewController.swift in Sources */,
 				A8260D3D2B083DA900BC8FA5 /* AppDelegate.swift in Sources */,
+				A8BA644A2B0A268B00579574 /* WaterViewController.swift in Sources */,
 				A85BDFD62B09509700F398F2 /* StreetViewController.swift in Sources */,
 				A85BDFDE2B096F9E00F398F2 /* Constants.swift in Sources */,
+				A8BA644E2B0A2A6000579574 /* PipeViewController.swift in Sources */,
 				A85BDFD22B0943DA00F398F2 /* TreeViewController.swift in Sources */,
+				A8BA644C2B0A290200579574 /* HeatingViewController.swift in Sources */,
 				A85BDFE82B097DE400F398F2 /* AsphaltViewController.swift in Sources */,
-				A85BDFEA2B097E1200F398F2 /* StandartViewController.swift in Sources */,
+				A85BDFEA2B097E1200F398F2 /* RooftViewController.swift in Sources */,
 				A85BDFE42B097C1200F398F2 /* HathViewController.swift in Sources */,
 				A85BDFE62B097D3E00F398F2 /* GarbageViewController.swift in Sources */,
 				A8260D3F2B083DA900BC8FA5 /* SceneDelegate.swift in Sources */,

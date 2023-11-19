@@ -1,5 +1,5 @@
 //
-//  StandartViewController.swift
+//  PipeViewController.swift
 //  SaratovSays
 //
 //  Created by Алексей Налимов on 19.11.2023.
@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-final class StandartViewController: UIViewController {
+final class PipeViewController: UIViewController {
     
     @IBOutlet weak private var webView: WKWebView!
     @IBOutlet weak var exit: UIButton!
@@ -20,3 +20,6 @@ final class StandartViewController: UIViewController {
         webView.load(URLRequest(url: url))
       }
 }
+
+
+
