@@ -591,13 +591,45 @@
                     <view key="view" contentMode="scaleToFill" id="fQM-Xp-nDP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztu-g0-Jtb">
+                                <rect key="frame" x="10" y="58" width="123.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8CB-jV-lvn"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Button">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Eq0-XM-J6K"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tv2-cx-6qt">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lah-iv-k3A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tv2-cx-6qt" firstAttribute="top" secondItem="ztu-g0-Jtb" secondAttribute="bottom" id="Csn-2O-BqM"/>
+                            <constraint firstItem="ztu-g0-Jtb" firstAttribute="top" secondItem="Lah-iv-k3A" secondAttribute="top" constant="10" id="Rrm-z8-Jgy"/>
+                            <constraint firstItem="Lah-iv-k3A" firstAttribute="trailing" secondItem="tv2-cx-6qt" secondAttribute="trailing" id="eFN-G9-6Je"/>
+                            <constraint firstItem="Lah-iv-k3A" firstAttribute="bottom" secondItem="tv2-cx-6qt" secondAttribute="bottom" id="rMX-1a-EDx"/>
+                            <constraint firstItem="ztu-g0-Jtb" firstAttribute="leading" secondItem="Lah-iv-k3A" secondAttribute="leading" constant="10" id="sXU-Sl-T4g"/>
+                            <constraint firstItem="tv2-cx-6qt" firstAttribute="leading" secondItem="Lah-iv-k3A" secondAttribute="leading" id="tev-kp-g53"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzF-MN-uL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2962" y="1081"/>
+            <point key="canvasLocation" x="2960.8695652173915" y="1080.8035714285713"/>
         </scene>
         <!--Heating View Controller-->
         <scene sceneID="AC5-9Y-HP6">
@@ -606,13 +638,45 @@
                     <view key="view" contentMode="scaleToFill" id="A58-L2-KYA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-iD-NrU">
+                                <rect key="frame" x="10" y="58" width="123.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jeK-Fv-bb5"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Button">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Dog-ms-pdK"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-Ho-a1L">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g3M-XB-xYl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="njQ-iD-NrU" firstAttribute="leading" secondItem="g3M-XB-xYl" secondAttribute="leading" constant="10" id="9tz-dQ-BA8"/>
+                            <constraint firstItem="ugD-Ho-a1L" firstAttribute="leading" secondItem="g3M-XB-xYl" secondAttribute="leading" id="AdY-NR-JOS"/>
+                            <constraint firstItem="g3M-XB-xYl" firstAttribute="bottom" secondItem="ugD-Ho-a1L" secondAttribute="bottom" id="MeY-6c-A8t"/>
+                            <constraint firstItem="ugD-Ho-a1L" firstAttribute="top" secondItem="njQ-iD-NrU" secondAttribute="bottom" id="Wtm-zh-wx0"/>
+                            <constraint firstItem="g3M-XB-xYl" firstAttribute="trailing" secondItem="ugD-Ho-a1L" secondAttribute="trailing" id="bym-cg-hqG"/>
+                            <constraint firstItem="njQ-iD-NrU" firstAttribute="top" secondItem="g3M-XB-xYl" secondAttribute="top" constant="10" id="vFP-4d-95d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plo-an-jsh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="1081"/>
+            <point key="canvasLocation" x="2018.840579710145" y="1080.8035714285713"/>
         </scene>
         <!--Pipe View Controller-->
         <scene sceneID="ztK-b3-5J1">
@@ -621,13 +685,46 @@
                     <view key="view" contentMode="scaleToFill" id="d8o-rg-57X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-uy-Gib">
+                                <rect key="frame" x="10" y="58" width="99.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NRL-Ji-5a6"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="tti-pM-Okz"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUh-cR-bsY">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tGK-js-R1y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eUh-cR-bsY" firstAttribute="leading" secondItem="tGK-js-R1y" secondAttribute="leading" id="9hZ-Lu-9SG"/>
+                            <constraint firstItem="eUh-cR-bsY" firstAttribute="leading" secondItem="Z4X-uy-Gib" secondAttribute="trailing" constant="-109.5" id="aEi-FT-Yr0"/>
+                            <constraint firstItem="eUh-cR-bsY" firstAttribute="top" secondItem="Z4X-uy-Gib" secondAttribute="bottom" id="cyL-qU-oRm"/>
+                            <constraint firstItem="Z4X-uy-Gib" firstAttribute="top" secondItem="tGK-js-R1y" secondAttribute="top" constant="10" id="dFq-Ia-tRH"/>
+                            <constraint firstItem="tGK-js-R1y" firstAttribute="trailing" secondItem="eUh-cR-bsY" secondAttribute="trailing" id="qJT-fC-pn8"/>
+                            <constraint firstItem="tGK-js-R1y" firstAttribute="bottom" secondItem="eUh-cR-bsY" secondAttribute="bottom" id="wpF-7Y-YWZ"/>
+                            <constraint firstItem="Z4X-uy-Gib" firstAttribute="leading" secondItem="tGK-js-R1y" secondAttribute="leading" constant="10" id="zg9-fr-yww"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEA-Z8-Hca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="1081"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="1080.8035714285713"/>
         </scene>
         <!--Roof View Controller-->
         <scene sceneID="ZRK-LG-r0d">
@@ -636,17 +733,49 @@
                     <view key="view" contentMode="scaleToFill" id="DHs-2K-NNv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXb-Wp-MSa">
+                                <rect key="frame" x="10" y="58" width="123.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aMY-zc-LUJ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nav_back_button(black)" title="Button">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="lvK-BH-F77"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd0-2q-vy8">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="87S-vJ-Ws8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MXb-Wp-MSa" firstAttribute="top" secondItem="87S-vJ-Ws8" secondAttribute="top" constant="10" id="Bcm-f5-JcK"/>
+                            <constraint firstItem="MXb-Wp-MSa" firstAttribute="leading" secondItem="87S-vJ-Ws8" secondAttribute="leading" constant="10" id="dUR-Nt-cJ1"/>
+                            <constraint firstItem="87S-vJ-Ws8" firstAttribute="bottom" secondItem="vd0-2q-vy8" secondAttribute="bottom" id="gcm-ph-2do"/>
+                            <constraint firstItem="vd0-2q-vy8" firstAttribute="leading" secondItem="87S-vJ-Ws8" secondAttribute="leading" id="nJh-hF-T6P"/>
+                            <constraint firstItem="vd0-2q-vy8" firstAttribute="top" secondItem="MXb-Wp-MSa" secondAttribute="bottom" id="ngT-Bc-pvk"/>
+                            <constraint firstItem="87S-vJ-Ws8" firstAttribute="trailing" secondItem="vd0-2q-vy8" secondAttribute="trailing" id="pZf-BN-gEi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvt-CJ-Or2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="1081"/>
+            <point key="canvasLocation" x="34.782608695652179" y="1080.8035714285713"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QR3-IV-fQf"/>
+        <segue reference="lvK-BH-F77"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="2737" height="2737"/>
